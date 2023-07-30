@@ -26,7 +26,7 @@ html {
 
 
 body {
-    background-image: url('/img/HarryBackground.jpeg');
+    background-image: url('./HarryBackground.jpeg');
     background-repeat: no-repeat;
     background-size:100%;
     background-attachment: fixed;
