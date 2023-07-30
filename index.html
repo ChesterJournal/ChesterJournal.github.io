@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+
+
+
+
+</head>
+<body>
+    <div class="big-container">
+        <div class="landing-wrapper center-ele">
+            <div class="landing">
+                <div class="title">
+                    <h1>
+                        Pei-Heng Ma (Chester)
+                    </h1>    
+                </div>
+                <div class="intro" >
+                    <p>
+                        Journalist. Photographer. Web Design & Coding Novice. Translator.
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:chestermajournal@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/chesterma" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                    <a href="https://github.com/ChesterJournal" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-bar wrapper center-ele">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="category1">Digital Projects</button>
+            <button class="category-btn" data-category="category2">Raven Articles</button>
+            <button class="category-btn" data-category="category3">Photography</button>
+            <!-- Add more buttons for additional categories -->
+          </div>
+
+        <div class="wrapper center-ele">
+            <div class="grid" style="position: relative;">
+                <div class="grid-item category1">
+                    <a href="/final_project/index.html">
+                    <img src="/img/1.svg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item grid-item--width2 category2">...</div>
+                <div class="grid-item category1">...</div>
+                <div class="grid-item category2">...</div>
+                <div class="grid-item category3">...</div>
+                <div class="grid-item category2">...</div>
+                <div class="grid-item category3">...</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="/js/filter.js"></script>
+<script>
+var elem = document.querySelector('.grid');
+var masonry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+</script>
+
+
+</html>
