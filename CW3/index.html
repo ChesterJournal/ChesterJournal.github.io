@@ -1,0 +1,281 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW3</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/echarts.js"></script>
+    
+
+
+
+    <style>
+        p {
+            font-family: Roboto;
+        }
+    </style>
+
+</head>
+<body> 
+
+    <audio id="audio" src="audio/Police Siren Ambience in Busy City.mp3"></audio>
+    
+    <div class="uk-tile uk-tile-default uk-background-cover" uk-parallax="bgy: -200" style="background-image:url(img/titleBackground.jpg);">
+        <div uk-scrollspy="cls:uk-animation-slide-bottom-medium; repeat: true; delay: 150">
+            <div style="width: 100%; height: 100%;">
+                <h1 class="uk-text-center uk-text-bolder">THE UNAFFORDABLE CITY</h1>
+                <p class="uk-text-center uk-text-bolder secondParagraph-p-tag">by Pei Heng Ma</p>
+                <div class="uk-text-center"><a href="#beginning" uk-scroll><span uk-icon="icon: chevron-down; ratio:4" style="color: aliceblue;" onclick="play()"></span></a></div>
+
+            </div>
+        </div>            
+    </div>
+    <div id="beginning">
+        <div class="video-wrapper">
+            <video playsinline autoplay muted loop>
+                <source src="video/traffic-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+                <div class="uk-container uk-width-5-6 uk-padding">
+                    <div class="on-top-of-video-text">
+                    <p class="uk-text-bold uk-text-large" style="color:aliceblue; background-color: rgba(105, 105, 105, 0.308);">As the UK grapples with ongoing inflation and a cost-of-living crisis, the prospect of young adults in the country being able to buy a home and start a happy family is increasingly becoming akin to a dream. The capital, London, renowned for its glamour, is particularly hard hit by the post-pandemic frenzy. In a concerning turn of events, the housing crisis in the UK is showing no signs of slowing down. Although the country is gradually reopening after the pandemic, the cost of living and house prices are still on the rise. This has made it increasingly challenging for first-time buyers to save up for their dream homes, exacerbating the housing crisis. The effects of this crisis are not limited to aspiring homeowners, but also extend to renters and those who are forced to continue renting.
+                    </p>
+                    <div class="uk-text-center"><a href="#secondParagraph" uk-scroll><span uk-icon="icon: chevron-down; ratio:4" style="color: aliceblue;"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="secondParagraph">
+        <div class="video-wrapper">
+            <video id="network-background" playsinline autoplay muted loop>
+                <source src="video/network-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="uk-container"> 
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-2@m uk-margin-auto">
+                        <li>
+                            <div class="uk-position-center uk-panel">
+                                <h1>Never Enough</h1>
+                                <p class="secondParagraph-p-tag">(swipe right to continue)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default uk-position-center" style="background-color: transparent;">
+                                <div class="uk-card-body">
+                                    <p class="secondParagraph-p-tag">In March 2023, the Office of National Statistics published its most recent report on housing affordability in England and Wales. The report analyzed the median house prices and median household income to determine the number of times a household salary is required to buy a property. The results were staggering, with the number reaching an all-time high, a situation exacerbated by the lockdown when property prices were inflated due to the pandemic.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                                <h2 style="color: white; margin-bottom: -6;">House Prices to Earnings Ratio Comparison between London and England (2002-2022)</h2>
+                                <div id="stack-chart" style="width: 100%;height:75%;"></div>
+                            
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default uk-position-center" style="width:70%; background-color: transparent;">
+                                <div class="uk-card-body">
+                                    <p class="secondParagraph-p-tag">In 2002, London's ratio was 6.74 compared to England's ratio of 4.92. By 2022, London's ratio had risen to 13.33 while England's ratio was 8.28. This suggests that the housing market in London is particularly unaffordable in comparison to the rest of England, with house prices rising faster than earnings. The data also suggests that the gap between London's ratio and England's ratio is widening, with London's ratio increasing at a faster pace in recent years.</p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="background-color: rgba(255, 255, 255, 0.429);"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/0DMvJ/embed.js?v=4" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/0DMvJ/full.png" alt="" /></noscript></div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default uk-position-center" style="background-color: transparent;">
+                                <div class="uk-card-body">
+                                    <p class="secondParagraph-p-tag">The pandemic restrictions that closed offices and decimated London's hospitality industry have caused many young people to relocate from the city center to the suburbs. The map illustrates the increase in the housing affordability ratio percentage for each borough in London over the years. From the map, we can see the suburban boroughs are witnessing a significant rise in unaffordability.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h2 style="color: white;">House Price Growth vs Median Income Growth in London</h2>
+                            <div id="house-price-to-income-chart" style="width: 115%;height:500%; margin-bottom:-4;"></div>
+
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default uk-position-right" style="width:85%; background-color: transparent;">
+                                <div class="uk-card-body">
+                                    <p class="secondParagraph-p-tag">From 2003 to 2022, the house price growth in London has consistently outpaced median income growth, with the gap between the two increasing significantly over time. From 2003 to 2008, house price growth ranged from 14% to 56%, while median income growth ranged from 3.83% to 23.23%. From 2009 to 2018, house price growth ranged from 47% to 169%, while median income growth ranged from 26.57% to 41.48%.
+                                    </p>
+                                    <p class="secondParagraph-p-tag">The trend continued in the following years, with the gap widening even further. In 2022, the accumulated house price growth was 209%, while the total median income growth was 56.10%, nearly four times less. This comparison indicates a continuing trend of disproportionate growth in London's housing market, with many Londoners unable to keep up with the rising prices despite an increase in wages.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                
+                </div>
+            </div>
+            <div class="uk-text-center"><a href="#thirdParagraph" uk-scroll><span uk-icon="icon: chevron-down; ratio:4" style="color: aliceblue;"></span></a></div>
+        </div>
+    </div>
+    
+    
+
+
+    <div id="thirdParagraph">
+        
+        <div class="video-wrapper">
+            <video playsinline autoplay muted loop uk-parallax="bgy: -200">
+                <source src="video/street-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                
+                <div class="uk-card uk-card-body">
+                    <a href="#covid-card" uk-toggle><img src="img/street-mask.jpg" width="400" height="400" alt=""></a>
+                    <div id="covid-card" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover" style="background-image: url('img/mask.jpg');" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1 class="card-titles">COVID</h1>
+                                    <p>The pandemic had a significant impact on the <a href="https://www.standard.co.uk/homesandproperty/property-news/covid-pandemic-london-property-market-house-prices-effects-b924617.html">property market</a>, causing a complete shutdown. Many predicted that it would lead to a property crash, but the opposite happened. The lockdown created a backlog of demand, as people were unable to view or move houses. Once the market reopened, there was a sudden surge in demand, but not enough properties available for sale. This resulted in a competition for space, triggering a surge in prices across the UK.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-card uk-card-body">
+                    <a href="#economic-card" uk-toggle><img src="img/strike.jpg" width="400" height="400" alt=""></a>
+                    <div id="economic-card" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover" style="background-image: url('img/mass-protest.jpg');" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1 class="card-titles">Lack of economic growth</h1>
+                                    <p>Economists analyzing the UK economy after the 2007 financial crisis typically divide the 15-year period into three distinct phases. The first phase was the financial crisis itself, which resulted in a banking system crisis and a severe recession. From 2010, the UK entered a period of austerity where growth was slower than before 2007, but the country still maintained the highest GDP growth per capita among the G7 nations. However, the UK's economic performance worsened after the 2016 Brexit referendum, both in absolute terms and compared to other G7 nations. While all G7 economies were impacted by the Covid-19 pandemic and the Russian invasion of Ukraine, the UK is the only advanced economy among them that has yet to recover to its pre-pandemic level of economic output.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-card uk-card-body">
+                    <a href="#interest-card" uk-toggle><img src="img/DALL·E unpaid bills.png" width="400" height="400" alt=""></a>
+                    <div id="interest-card" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover" style="background-image: url('img/bank.jpg');" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1 class="card-titles">Interest rates</h1>
+                                    <p>Amidst rising inflation concerns, the government has been left with no choice but to raise the interest rates, causing a ripple effect on the housing market. With heavier burdens on their shoulders, many buy-to-rent landlords were opting to sell their properties, leading to a net selling of <a href="https://www.theguardian.com/money/2023/feb/24/lots-of-us-are-very-anxious-why-britains-buy-to-let-landlords-are-selling">35,000 properties in 2022</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="uk-text-center"><a href="#fourthParagraph" uk-scroll><span uk-icon="icon: chevron-down; ratio:4" style="color: aliceblue;"></span></a></div>
+        </div>
+    </div>
+
+    
+    <div class="uk-tile uk-tile-default uk-background-cover" uk-parallax="bgy: -200" style="background-image:url(img/fourth-background.jpg);">              
+        <div id="fourthParagraph" >
+            <div class="uk-container uk-width-5-6 uk-padding">
+                <h1 class="uk-text-center card-titles">Renters' worst nightmare</h1>
+                    
+                    <h3 class="uk-text-center card-titles">Comparison of London housing affordability ratio and inflation increase</h3>
+                    <div id="mixed-chart" style="width: 75%; height: 75%;" class="uk-margin-auto"></div>
+                    
+                    
+                    <p class="secondParagraph-p-tag" uk-parallax="opacity: 0,1,1; end: 50vh + 50%;">I collected data from the HM Land Registry and Bank of England, and conducted a cross-analysis to examine the relationship between interest rates and house prices over the past few months. Looking at the data set, we can observe that there is a negative correlation between interest rates and London house prices. As the interest rates increase, the median house prices in London decrease. Between August and September 2022, there was an increase in the interest rate from 1.25% to 1.75%, and there was a slight decrease in the median house price from £544,636 to £544,178. Similarly, between December 2022 and January 2023, the interest rate increased from 3% to 3.5%, and the median house price saw a small decrease from £537,119 to £538,116.
+
+                    </p>
+                    
+
+                    <p class="secondParagraph-p-tag" uk-parallax="opacity: 0,1,1; end: 50vh + 50%;">However, it should be noted that the correlation between interest rates and house prices is not always clear-cut or immediate. Numerous factors, including supply and demand, economic conditions, and government policies, may also affect the housing market. While there has been a minor decline in house prices in the market, they have continued to reach record highs over the long term.
+
+                    </p>
+
+                    <p class="secondParagraph-p-tag" uk-parallax="opacity: 0,1,1; end: 50vh + 50%;">With more landlords selling up their properties, the market saw a shortage in supply, and in the time when people are coming back to London, listings can be gone as fast as <a href="https://www.youtube.com/watch?v=Aq2ZvAvrqvo&t=75s">within 24 hours when the ad was placed</a>. One realty agent said in an interview with CNBC: “We often don't have to ask tenants to offer over asking price. They just offer over asking price because they've lost out on the last two or three properties that they've bid for. They're offering long leases realizing that they probably don't want to be looking again in another year.”
+                    </p>
+
+                    <p class="secondParagraph-p-tag" uk-parallax="opacity: 0,1,1; end: 50vh + 50%;">First-time buyers are faced with the challenge of accumulating more savings for buying their homes, as the already high cost of properties is now compounded by <a href="https://www.mirror.co.uk/money/help-buy-scheme-finally-comes-28350521">the ending of the Help to Buy scheme</a>. Many of these young adults are therefore forced to continue renting and competing with other groups in the already cut-throat rental market. 
+                    </p>
+
+                    <p class="secondParagraph-p-tag" uk-parallax="opacity: 0,1,1; end: 50vh + 50%;">One of these groups is the social housing dwellers. The availability of social housing <a href="https://www.economicshelp.org/blog/183129/economics/is-there-really-a-housing-shortage-in-the-uk/">has been diminishing steadily</a>, with old stocks being sold or demolished without replacement. As a result, there are now 1.4 million fewer social housing households than in 1980, and one million households are currently on the waiting list for such housing. With homes being increasingly unaffordable due to high prices, the demand for social housing has risen. However, since the private rental sector has been slow to catch up with this demand, there has been a surge in rents, particularly in big cities and the south of England, which have exceeded inflation rates.
+                    </p>
+
+                    <p class="secondParagraph-p-tag" uk-parallax="opacity: 0,1,1; end: 50vh + 50%;">But it's not just residents of the UK who are feeling the pinch. According to recent reports, the soaring housing prices are putting pressure on the influx of international students, with nearly <a href="https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-december-2022/summary-of-latest-statistics">half a million</a> individuals arriving in the country in 2021 alone. This represents an 81% increase from 2019, and many of these students are expected to remain in the UK after graduation, thanks to the <a href="https://www.gov.uk/graduate-visa">reinstated Post Study Work (PSW) visa</a>.
+                    </p>
+                    <div class="uk-text-center"><a href="#finalParagraph" uk-scroll><span uk-icon="icon: chevron-down; ratio:4" style="color: aliceblue;"></span></a></div>
+            </div>
+        </div>
+    </div>
+
+            <div id="finalParagraph" uk-parallax="bgy: -200" style="background-image: url(img/world-map.jpg);">
+                    <!-- <carousel for housing solutions> -->
+                    <!-- <Vienna’s solution> -->
+                <h1 class="uk-text-center card-titles" style="color: white;">Could we learn from other countries?</h1>
+                    <div class="uk-child-width-1-2 uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                        
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                <img src="img/finland.png" width="35%" alt="">
+                                <div class="uk-position-center">
+                                    <div class="uk-transition-slide-top-small"><h4 class="uk-margin-remove" style="color: black; background-color: rgba(255, 255, 255, 0.851);">Finland</h4></div>
+                                    <div class="uk-transition-slide-bottom-small"><h4 class="uk-margin-remove" style="color: black; background-color:  rgba(255, 255, 255, 0.851);">Finland has a social housing system that is based on income and need. The government provides financial support for the construction of social housing, and the rental rates are set at an affordable level based on income.</h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                <img src="img/singapore.png" width="80%"alt="">
+                                <div class="uk-position-center">
+                                    <div class="uk-transition-slide-top-small"><h4 class="uk-margin-remove" style="color: black;background-color: rgba(255, 255, 255, 0.851);">Singapore</h4></div>
+                                    <div class="uk-transition-slide-bottom-small"><h4 class="uk-margin-remove" style="color: black;background-color:  rgba(255, 255, 255, 0.851);">The government of Singapore has implemented a comprehensive public housing system that provides affordable homes for 80% of the population. The Housing Development Board (HDB) is the government agency responsible for providing affordable public housing for Singaporeans.</h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                <img src="img/netherlands.png" width="35%" alt="">
+                                <div class="uk-position-center">
+                                    <div class="uk-transition-slide-top-small"><h4 class="uk-margin-remove" style="color: black;background-color: rgba(255, 255, 255, 0.851);">Netherlands</h4></div>
+                                    <div class="uk-transition-slide-bottom-small"><h4 class="uk-margin-remove" style="color: black;background-color:  rgba(255, 255, 255, 0.851);">The Netherlands has a system of social housing that provides affordable homes to low- and middle-income households. The government provides financial support for the construction and maintenance of social housing, and the rental rates are set at an affordable level based on income.</h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                <img src="img/sweden.png" width="30%" alt="">
+                                <div class="uk-position-center">
+                                    <div class="uk-transition-slide-top-small"><h4 class="uk-margin-remove" style="color: black;background-color:  rgba(255, 255, 255, 0.851);">Sweden</h4></div>
+                                    <div class="uk-transition-slide-bottom-small"><h4 class="uk-margin-remove" style="color: black;background-color: rgba(255, 255, 255, 0.851);">Sweden has a long history of providing social housing, and today, around 20% of the population lives in subsidized housing. The government provides financial support for the construction and renovation of social housing, and the rental rates are set at an affordable level based on income.</h4></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        
+        <script src="js/index.js"></script>
+   
+
+    </body>
+</html>
