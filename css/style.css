@@ -1,0 +1,194 @@
+
+body{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+.grid-sizer,
+.grid-item { 
+    width: 18.5%;
+    height: auto; /* Set a maximum height for the items */
+    overflow: hidden; /* Hide any content that exceeds the max height */
+    opacity: 1; /* Set the default opacity to 1 for visible items */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Add the transition property */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+.grid{
+    transition: opacity 0.3s; /* Add the transition property */
+}
+
+.center-ele{
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.wrapper{
+    max-width: 1160px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+  }
+
+.intro{
+    max-width: 400px;
+}
+
+.contact-info a{
+	text-decoration: none;
+    border-bottom: 0;
+    color: #282828;
+}
+
+.landing{
+	max-width: 400px;
+}
+
+
+
+.landing-wrapper{
+	max-width: 1160px;
+}
+
+.big-container{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+button{
+    background-color: transparent;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.category-bar-button{
+    margin-bottom: 5px;
+}
+
+.img-container-duo{
+    border: solid black;
+    border-width: 0.5px;
+    border-bottom: none;
+}
+
+.img-container-single{
+    border: double black;
+}
+
+.text-container{
+    border: solid black;
+    border-width: 0.5px;
+    font-size: small;
+    padding: 5px;
+}
+
+img {
+	width: 100%;
+}
+
+
+
+.title-inside-grid{
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:rgb(0, 0, 0);
+  }
+
+
+
+@media (max-width: 900px){
+    .wrapper{
+        max-width: 700px;
+      }
+    
+      .landing-wrapper{
+      max-width: 700px;
+      }
+    
+      .grid-item{
+        width: 40%;
+        height: auto;
+        
+    }
+    .text-container{
+
+        font-size: medium;
+    }
+
+    }
+
+
+@media (max-width: 845px){
+    .wrapper{
+        max-width: 530px;
+      }
+    
+      .landing-wrapper{
+        max-width: 530px;
+        }
+
+    .grid-item{
+        width: 230px;
+        height: auto;
+        
+    }
+
+    .text-container{
+
+        font-size: medium;
+    }
+}
+
+@media (max-width: 585px){
+    .wrapper{
+        max-width: 380px;
+      }
+    
+    .landing-wrapper{
+        max-width: 380px;
+        }
+
+    .text-container{
+
+        font-size: medium;
+    }
+
+    .grid-item{
+        width: 350px;
+        height: auto;
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 390px) {
+
+    .wrapper{
+        max-width: 300px;
+      }
+    
+    .landing-wrapper{
+        max-width: 300px;
+        }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-item{
+        width: 300px;
+        height: auto;
+        
+    }
+}
