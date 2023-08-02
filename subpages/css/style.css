@@ -176,6 +176,13 @@ hr.dotted {
   font-weight: 400;
 }
 
+@media screen and (max-width: 500px){
+
+  .grid-container {
+  display: grid;
+  grid-template-columns: 100%
+}
+
 ul.b {
   list-style-type: square;
 }
