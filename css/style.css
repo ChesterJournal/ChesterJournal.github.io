@@ -62,6 +62,12 @@ body{
 button{
     background-color: transparent;
     font-family: 'IBM Plex Mono', monospace;
+    border-style: solid;
+    border-color: black;
+}
+
+.blacklink{
+    color: black;
 }
 
 .category-bar-button{
