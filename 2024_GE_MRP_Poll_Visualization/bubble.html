@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2024 GE Winner Parties Packed Bubble Chart</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+            This Split Packed Bubble Chart from Highcharts uses prediction data from YouGov to illustrate the possible outcomes of the 2024 General Election across 631 constituencies for each party. The chart depicts the magnitude of each party's wins by the size of the bubbles and the winner margin in each constituency. It provides two key insights: Labour is predicted to win a majority, often by substantial margins, and the Liberal Democrats have significantly increased their share, capturing many constituencies with large margins from other parties.
+<br><br>
+            I initially organized the data by writing a Python script to generate a JSON file containing the areas, the predicted winners in each constituency for the 2024 General Election, and their winning margins. I then used Highcharts.js to create a bubble chart and incorporated it into a simple HTML page for demonstration.
+<br><br>
+            Given more time, I would like to use a hexmap, similar to the one used in this <a href="https://www.bloomberg.com/news/articles/2019-12-13/britain-s-political-map-changes-color-in-ways-few-could-imagine">Bloomberg article</a> , to better visualize the territorial division for each party. Additionally, I would compare the winners from 2019 with the 2024 predictions to highlight the significant losses suffered by the Conservatives.
+        </p>
+    </figure>
+    <script src="script.js"></script>
+</body>
+</html>
