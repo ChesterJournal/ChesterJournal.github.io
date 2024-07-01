@@ -1,4 +1,4 @@
-fetch('/2024_GE_MRP_Poll_Visualization/series_data.json')
+fetch('https://raw.githubusercontent.com/ChesterJournal/ChesterJournal.github.io/main/2024_GE_MRP_Poll_Visualization/series_data.json')
             .then(response => response.json())
             .then(seriesData => {
                 Highcharts.chart('container', {
