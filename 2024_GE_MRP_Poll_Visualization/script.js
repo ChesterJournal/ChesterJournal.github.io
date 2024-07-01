@@ -1,4 +1,4 @@
-fetch('http://localhost:8000/series_data.json')
+fetch('series_data.json')
             .then(response => response.json())
             .then(seriesData => {
                 Highcharts.chart('container', {
